@@ -1,1 +1,26 @@
 // Mixins Here
+
+
+//Navy color
+.navy {
+    color: #22283B;
+ }
+
+//Button mixin
+.btn {
+    color: white;
+    background-color: .navy()
+    border-radius: 10px;
+    font-size: 17px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-top: 10px;
+    }
+}
+
+.btn_mixin {
+    text-align: center;
+    .btn();
+}
+

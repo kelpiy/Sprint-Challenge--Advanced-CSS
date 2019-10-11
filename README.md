@@ -34,13 +34,24 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+A responsive website recognizes and adapts to the size of the user's screen and it uses CSS media queries to change styles based on the target device. An adaptive website utilizes static layouts based on breakpoints which don’t respond once they’re initially loaded.
+
 2. Describe what it means to be mobile first vs desktop first.
 
+Designing for full-sized screens (desktop-first) means building for the highest specs to communicate as much as possible. Designing for small screens, like a tablet of cell phone, is designed mainly for functionality. In the moibile-first approach we start by laying out a core function and then layering the extras features that would be displayed on larger screen incrementally.
+
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+In case of web accessibility, the default setting of most browsers make 16px equals to 100%, so 10px equals to 62.5%. When specified on the font-size property of the root element, the rem units refer to the property's initial value. 
 
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessors are programs that offer the variables missing in CSS. The preprocessor (like Less or Sass) is comprised of a language, the code that you write, and a compiler that converts the code into standard CSS which is read and processed by any web browser.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is mixins! I have been using InDesign for a couple of years and I've wondered if there is an Adobe plug-in that would enable easier styling for long, complex documents that utilize repeated/nested styles for text and image. It can get tedious to snap to origin and space very small elements properly within a given "parent container" in the layout. In this unit, I can see how valuable mixins are for saving time and eliminating the need to verify spacing issues for individual elements that might be repeated 50x in a single document.
+
+The concept that gives me the most trouble is the architecture of preprocessing. I don't fully understand what "compiled" means and I'd like to be able to visualize how Less/css/html/git/the browser work together to produce a final responsive/visual product.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

@@ -1,26 +1,35 @@
 // Mixins Here
 
-
-//Navy color
-.navy {
+// Navy color
+.navy() {
     color: #22283B;
  }
+ 
+ // navy background color
+ .navy_background() {
+    background-color: #22283B;
+ }
 
-//Button mixin
-.btn {
-    color: white;
-    background-color: .navy()
+ // spacing mixin for centering items in flex container
+ .center_flex() {
+    display: flex;
+    justify-content: center;
+ }
+
+// button parametric mixin
+.btn(@color, @font-size) {
+    color: @color;
+    background-color:#22283B;
     border-radius: 10px;
-    font-size: 17px;
+    font-size: @font-size;
     width: 100px;
     height: 40px;
     text-align: center;
     padding-top: 10px;
+    &:hover {
+        color: green;
     }
-}
-
-.btn_mixin {
-    text-align: center;
-    .btn();
-}
-
+    @media(max-width: 500px) {
+            width: 100%
+          }
+ }

@@ -17,19 +17,19 @@
  }
 
 // button parametric mixin
-.btn(@color, @font-size) {
-    color: @color;
+.btn(@text-color, @font-size) {
+    color: @text-color;
     background-color:#22283B;
     border-radius: 10px;
     font-size: @font-size;
     width: 100px;
     height: 40px;
     text-align: center;
-    padding-top: 10px;
     &:hover {
-        color: green;
+        background-color: white;
+        .navy();
     }
     @media(max-width: 500px) {
-            width: 100%
-          }
+    width: 100%;
+    }
  }

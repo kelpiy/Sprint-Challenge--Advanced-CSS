@@ -205,10 +205,11 @@ footer {
   display: flex;
   justify-content: center;
 }
-.space_pic img {
+.space_pic .space_img {
   border-radius: 10px;
   max-width: 100%;
   height: auto;
+  border: 1px;
 }
 .space-images {
   display: flex;
@@ -269,7 +270,7 @@ footer {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .walk {
+  .walk .walk-text {
     width: 100%;
   }
 }
@@ -294,5 +295,23 @@ footer {
     width: 95%;
     display: flex;
     justify-content: center;
+  }
+}
+button {
+  color: white;
+  background-color: #22283B;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  width: 100px;
+  height: 40px;
+  text-align: center;
+}
+button:hover {
+  background-color: white;
+  color: #22283B;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
   }
 }

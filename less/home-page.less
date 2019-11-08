@@ -13,12 +13,12 @@
 
 // banner img container
   .space_pic {
-    .center_flex()
-    // img content
-    img {
+    .center_flex();
+    .space_img {
       border-radius: 10px;
       max-width:100%;
       height:auto;
+      border: 1px
     }
   }
 
@@ -37,19 +37,19 @@
     }
     // makes img disappear for mobile
     .launch {
-      @media(max-width: 500px) {
+      @media @phone {
       display: none;
       }
     }
     // makes img disappear for mobile
     .sky {
-      @media(max-width: 500px) {
+      @media @phone {
       display: none;
       }
     }
     // enlarges/centers img for mobile
     .blast {
-        @media(max-width: 500px) {
+      @media @phone {
           width: 90%;
           .center_flex()
         }
@@ -72,7 +72,7 @@
     margin-top: 50px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    @media(max-width: 500px) {
+    @media @phone {
       flex-direction: column-reverse;
       justify-content: center;
       padding:0 15px;
@@ -81,11 +81,12 @@
     }// closes mobile query
     .walk-text {
       width: 50%;
-    }
       // expands text across section
-      @media(max-width: 500px) {
+      @media @phone {
         width: 100%;
       }
+    }
+    
       h3 {
         margin-bottom: 10px;
         margin-top: 15px;
@@ -104,11 +105,12 @@
         border-radius: 10px;
       }
       // enlarges img for mobile
-      @media(max-width: 500px) {
+      @media @phone {
           width: 95%;
           .center_flex()
       }
     } // closes .walk-img section
-    .btn(@color: navy, @font-size: 18pt;) {
 
-    }
+  button {
+   .btn(@text-color: white, @font-size: 1.5rem);
+  }
